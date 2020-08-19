@@ -15,7 +15,7 @@ import { ContactmeComponent } from "./contactme/contactme.component";
 const appRoutes: Routes = [
   { path: "portfolio", component: PortfolioComponent },
   { path: "navbar", component: NavbarComponent },
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: "skills", component: SkillsComponent },
   { path: "experience", component: ExperienceComponent },
   { path: "education", component: EducationComponent },

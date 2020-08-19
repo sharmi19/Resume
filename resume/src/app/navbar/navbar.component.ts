@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.home = "/home";
+    this.home = "/";
     this.skills = "/skills";
     this.experience = "/experience";
     this.education = "/education";
