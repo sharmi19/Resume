@@ -13,18 +13,46 @@
 <body>
   <div class="bgcolor transbox">
     <app-navbar></app-navbar>
-    <p class="textpattern"><b>Work Experience</b></p>
-    <div *ngFor="let item of experience">
-      <div class="timespan">{{ item.time }}</div>
-      <div class="role">
-        <span>Role : {{ item.role }}</span> &
-        <span>Company : {{ item.company }}</span>
+    <p class="textpattern"><b>Resume</b></p>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="textpattern2"><b>Experience</b></p>
+
+        <div *ngFor="let item of experience">
+          <div class="timespan">{{ item.time }}</div>
+          <div class="role">
+            <span> {{ item.role }}</span
+            ><br />
+            <span
+              ><b>{{ item.company }}</b>
+            </span>
+          </div>
+          <br />
+          <div *ngFor="let i of item.set">
+            <ul style="padding-left: 5%;">
+              <li class="set">{{ i.point }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="skillformat">Working on:</div>
-      <div *ngFor="let i of item.set">
-        <ul style="padding-left: 5%;">
-          <li class="set">{{ i.point }}</li>
-        </ul>
+      <!-- <div class="col-md-2"></div> -->
+      <div class="col-md-6">
+        <p class="textpattern2"><b>Skills</b></p>
+
+        <div class="row" *ngFor="let item of skillset">
+          <div class="col-md-2 skillset">
+            <p>{{ item.name }}</p>
+          </div>
+          <div class="col-md-10">
+            <div
+              id="myBar"
+              class="w3-container w3-green"
+              style="width:{{ item.percentage }}"
+            >
+              {{ item.percentage }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

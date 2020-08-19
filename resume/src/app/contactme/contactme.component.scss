@@ -1,9 +1,9 @@
 .bgcolor {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(/assets/img/mountain.jpg);
+  // background: linear-gradient(
+  //     rgba(255, 255, 255, 0.6),
+  //     rgba(255, 255, 255, 0.6)
+  //   ),
+  //   url(/assets/img/mountain.jpg);
   // width: 100vw;
   display: block;
   padding: 0px;
@@ -14,7 +14,7 @@
 }
 .textpattern {
   margin-top: 1%;
-  font-family: "Brush Script MT", cursive;
+  font-family: poppins-semibold, poppins, sans-serif;
   font-size: 40px;
   color: black;
   text-align: center;
@@ -22,8 +22,8 @@
 .outerbox {
   margin-left: 3%;
   margin-top: 1%;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 22px;
+  font: normal normal normal 14px/1.4em avenir-lt-w01_85-heavy1475544,
+    sans-serif;
   color: black;
 }
 h2 {
