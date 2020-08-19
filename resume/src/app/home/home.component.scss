@@ -1,0 +1,51 @@
+.bgcolor {
+  background-color: black;
+  padding: 0px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/img/rain.jpg);
+  width: 100vw;
+  display: block;
+  padding: 0px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+img {
+  border-radius: 50%;
+}
+.profileimage {
+  width: 45%;
+  margin-top: 13%;
+  margin-left: 30%;
+}
+#main {
+  width: 35%;
+  display: flex;
+}
+
+#main div {
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+.headersname {
+  margin-top: 2%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 65px;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  // text-shadow: h-shadow v-shadow blur-radius black|none|initial|inherit;
+
+  //   font: normal normal normal 65px/1.4em lulo-clean-w01-one-bold, sans-serif;
+}
+.textpattern {
+  margin-left: 59%;
+  margin-top: 0%;
+  font-family: "Brush Script MT", cursive;
+  font-size: 35px;
+}

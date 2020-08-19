@@ -1,0 +1,31 @@
+.bgcolor {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(/assets/img/mountain.jpg);
+  // width: 100vw;
+  display: block;
+  padding: 0px;
+  height: 100vh;
+  // background-image: url(/assets/img/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textpattern {
+  margin-top: 1%;
+  font-family: "Brush Script MT", cursive;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+.outerbox {
+  margin-left: 3%;
+  margin-top: 1%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 22px;
+  color: black;
+}
+h2 {
+  font-size: 22px;
+}

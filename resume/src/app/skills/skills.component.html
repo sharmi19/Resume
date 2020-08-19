@@ -1,0 +1,32 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+<body>
+  <div class="bgcolor">
+    <app-navbar></app-navbar>
+    <p class="textpattern">My Knowledge Level in Software</p>
+    <div class="row" *ngFor="let item of skillset">
+      <div class="col-md-2 skillset">
+        <p>{{ item.name }}</p>
+      </div>
+      <div class="col-md-10">
+        <div
+          id="myBar"
+          class="w3-container w3-green"
+          style="width:{{ item.percentage }}"
+        >
+          {{ item.percentage }}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
